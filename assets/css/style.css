@@ -133,3 +133,7 @@ button {
     max-width: 200px;
     margin: auto;
 }
+
+.green-border{
+    border: #32B72F 3px solid;
+}
