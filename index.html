@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
     <title>DrivenEats</title>
 </head>
 
@@ -22,24 +18,24 @@
     </header>
 
     <main>
-        <section class="mt-123">
+        <section id="pratos" class="mt-123">
             <h2>Primeiro, seu prato</h2>
             <ul>
-                <li data-test="dish" class="green-box">
+                <li data-test="dish" class="box" onclick="getPrato(this)">
                     <img src="./assets/img/frango_yin_yang.png" alt="imagem do prato de frango">
                     <h4 data-test="item-name">Frango Yin Yang</h4>
                     <p class="descricao">Um pouco de batata, um pouco de salada</p>
                     <p data-test="item-price" class="preco">R$ 16,00</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </li>
-                <li data-test="dish" class="green-box">
+                <li data-test="dish" class="box" onclick="getPrato(this)">
                     <img src="./assets/img/frango_yin_yang.png" alt="imagem do prato de carne">
                     <h4 data-test="item-name">Carne Yin Yang</h4>
                     <p class="descricao">Um pouco de batata, um pouco de salada</p>
                     <p data-test="item-price" class="preco">R$ 20,00</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </li>
-                <li data-test="dish" class="green-box">
+                <li data-test="dish" class="box" onclick="getPrato(this)">
                     <img src="./assets/img/frango_yin_yang.png" alt="imagem do prato de peixe">
                     <h4 data-test="item-name">Peixe Yin Yang</h4>
                     <p class="descricao">Um pouco de batata, um pouco de salada</p>
@@ -48,24 +44,24 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="bebidas">
             <h2>Agora, sua bebida</h2>
             <ul>
-                <li data-test="drink" class="green-box">
+                <li data-test="drink" class="box" onclick="getBebida(this)">
                     <img src="./assets/img/coca-cola.png" alt="imagem do refrigerante">
                     <h4 data-test="item-name">Coca Zero</h4>
                     <p class="descricao">Lata coca-cola zero 350ml</p>
                     <p data-test="item-price" class="preco">R$ 4,00</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </li>
-                <li data-test="drink" class="green-box">
+                <li data-test="drink" class="box" onclick="getBebida(this)">
                     <img src="./assets/img/coca-cola.png" alt="imagem do refrigerante">
                     <h4 data-test="item-name">Coca-Cola</h4>
                     <p class="descricao">Lata coca-cola normal 350ml</p>
                     <p data-test="item-price" class="preco">R$ 4,50</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </li>
-                <li data-test="drink" class="green-box">
+                <li data-test="drink" class="box" onclick="getBebida(this)">
                     <img src="./assets/img/coca-cola.png" alt="imagem do refrigerante">
                     <h4 data-test="item-name">Guaraná</h4>
                     <p class="descricao">Lata guaraná Kuat 350ml</p>
@@ -74,24 +70,24 @@
                 </li>
             </ul>
         </section>
-        <section class="mb-108">
+        <section id="sobremesas" class="mb-108">
             <h2>Por fim, sua sobremesa</h2>
             <ul>
-                <li data-test="dessert" class="green-box">
+                <li data-test="dessert" class="box" onclick="getSobremesa(this)">
                     <img src="./assets/img/pudim.png" alt="imagem da sobremesa">
                     <h4 data-test="item-name">Pudim</h4>
                     <p class="descricao">Apenas pudim com calda de caramelo</p>
                     <p data-test="item-price" class="preco">R$ 5,50</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </li>
-                <li data-test="dessert" class="green-box">
+                <li data-test="dessert" class="box" onclick="getSobremesa(this)">
                     <img src="./assets/img/pudim.png" alt="imagem da sobremesa">
                     <h4 data-test="item-name">Brigadeiro</h4>
                     <p class="descricao">Apenas brigadeiro de colher</p>
                     <p data-test="item-price" class="preco">R$ 4,40</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </li>
-                <li data-test="dessert" class="green-box">
+                <li data-test="dessert" class="box" onclick="getSobremesa(this)">
                     <img src="./assets/img/pudim.png" alt="imagem da sobremesa">
                     <h4 data-test="item-name">Mousse</h4>
                     <p class="descricao">Apenas mousse de chocolate</p>
@@ -107,7 +103,9 @@
             <p class="mensagem1-rodape">Selecione os 3 itens para fechar o pedido</p>
         </button>
     </footer>
-
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
